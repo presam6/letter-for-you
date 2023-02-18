@@ -32,6 +32,21 @@ body{
     text-transform: uppercase;
      margin: 5px;
 }
+.box p{
+    text-align: justify;
+    text-shadow: black;
+    text-indent: 50px;
+}
+.box h2{
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    font-family: cursive;
+}
+.box h4{
+    font-family: cursive;
+    font-style: italic;
+}
 .top-border:before{
     content: '';
     width: 200px;
@@ -82,10 +97,30 @@ body{
     animation: pulse 1s ease infinite;
     display: inline-block;
 }
+.bubbles{
+    top: 90%;
+    left: 80;
+    animation: animate 15s ease infinite;
+}
+@keyframes pulse{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.3);}
+    100%{transform: scale(1);}
+}
+
 </style>
+
 </head>
 <body>
+    <div class="wrapper">
+            <div><span class="bub"></span></div>
+            <div><span class="bub"></span></div>
+            <div><span class="bub"></span></div>
+            <div><span class="bub"></span></div>
+        </div>
+    </div>
     <div class="main">
+        
     <div class="box">
         <div class="top-border"></div>            
         <img src="img/rose.png" class="ring">
@@ -100,8 +135,11 @@ body{
         <p>As I sit down to write this love letter, I find myself filled with an overwhelming sense of love and gratitude for you. You are the light that brightens my day and the warmth that fills my heart. From the moment I met you, I knew that there was something special about you, and I thank my lucky stars every day that you are in my life.
             I am in awe of the way you move through this world with grace, kindness, and compassion. Your smile brightens up every room you enter, and your laughter is like music to my ears. I feel so fortunate to have found someone who understands me so completely, and who supports me through thick and thin.
             You make every day feel like a blessing, and I cherish the time we spend together. Whether we are exploring new places, having deep conversations, or just enjoying each other's company, I am constantly reminded of how lucky I am to have you by my side.
-            So my love, I want you to know that I am here for you, now and always. I will stand by you through the highs and lows of life, and I will love you with every fiber of my being. You are the best thing that has ever happened to me, and I am eternally grateful for your love.  <br><br> I love you, babi. 
+            So my love, I want you to know that I am here for you, now and always. I will stand by you through the highs and lows of life, and I will love you with every fiber of my being. You are the best thing that has ever happened to me, and I am eternally grateful for your love. 
         </p>
+        <h2>
+            I love you, Babi
+        </h2>
         <h4>
             - Babi
         </h4>
