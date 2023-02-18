@@ -5,8 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=5.0, minimum-scale=0.5">
     <title>Document</title>
 <style>
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css');
 
+    body{
+        font-family: 'Lora';
+        font-size: 17px;
+        line-height: 1.5;
+        background: linear-gradient(#cd88f4, #ba04c5, #42d7e0);
+        background-attachment: scroll;
+    }
+    .box{
+        background: #e91e63;
+        padding: 60px 60px;
+        color: #fff;
+        width: 50%;
+        text-align: center;
+        margin: 25vh auto;
+        position: relative;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    .box h3{
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 5px;
+    }
+    .top-border:before{
+        content: '';
+        width: 71px;
+        height: 71px;
+        position: absolute;
+        background: url(about-pattern-left-top.png);
+        background-size: cover;
+        top: 20px;
+        left: 20px;
+    }
+    .top-border::after{
+        content: '';
+        width: 71px;
+        height: 71px;
+        position: absolute;
+        background: url(about-pattern-left-top.png);
+        background-size: cover;
+        top: 20px;
+        right: 20px;
+        transform: rotate(90deg);
+    }
+    .bottom-border:before{
+        content: '';
+        width: 71px;
+        height: 71px;
+        position: absolute;
+        background: url(about-pattern-left-top.png);
+        background-size: cover;
+        bottom: 20px;
+        left: 20px;
+        transform: rotate(270deg);
+    }
+    .bottom-border::after{
+        content: '';
+        width: 71px;
+        height: 71px;
+        position: absolute;
+        background: url(about-pattern-left-top.png);
+        bottom: 20px;
+        right: 20px;
+        transform: rotate(180deg);
+    }
+    .box img{
 
+    }
+    .love{
+        animation: pulse 1s ease infinite;
+        display: inline-block;
+    }
+    @keyframes pulse{
+        0%{transform: scale(1);}
+        50%{transform: scale(1.3);}
+        100%{transform: scale(1);}
+    }
 </style>
 </head>
 <body>
@@ -14,7 +91,7 @@
     <div class="box">
         <div class="top-border"></div>            
         <img src="" class="ring">
-        <h3>Strawberry <span class="love">&#x1f49f;</span> Reyes</h3>
+        <h3>Strawberry <span class="love">💓</span> Reyes</h3>
         <p>On this special day, I want to express my love and admiration for you. You are the sunshine that brightens my day, the reason I wake up each morning with a smile on my face, and the one who fills my life with happiness.
             From the moment I met you, I knew that there was something special about you. Your smile, your laughter, and your kindness all captured my heart. As I got to know you better, I fell more deeply in love with you, and my feelings for you have only grown stronger with time.
             I feel so blessed to have you in my life, and I can't imagine a single day without you. You bring joy and meaning to my life, and I am grateful for every moment we spend together.</p>
@@ -25,9 +102,12 @@
         <p>As I sit down to write this love letter, I find myself filled with an overwhelming sense of love and gratitude for you. You are the light that brightens my day and the warmth that fills my heart. From the moment I met you, I knew that there was something special about you, and I thank my lucky stars every day that you are in my life.
             I am in awe of the way you move through this world with grace, kindness, and compassion. Your smile brightens up every room you enter, and your laughter is like music to my ears. I feel so fortunate to have found someone who understands me so completely, and who supports me through thick and thin.
             You make every day feel like a blessing, and I cherish the time we spend together. Whether we are exploring new places, having deep conversations, or just enjoying each other's company, I am constantly reminded of how lucky I am to have you by my side.
-            So my love, I want you to know that I am here for you, now and always. I will stand by you through the highs and lows of life, and I will love you with every fiber of my being. You are the best thing that has ever happened to me, and I am eternally grateful for your love.
-
+            So my love, I want you to know that I am here for you, now and always. I will stand by you through the highs and lows of life, and I will love you with every fiber of my being. You are the best thing that has ever happened to me, and I am eternally grateful for your love.  <br><br> I love you, babi. 
         </p>
+        <h4>
+            - Babi
+        </h4>
+        <div class="bottom-border"></div>
     </div>
     </div>
 </body>
